@@ -1,0 +1,17 @@
+{
+  "my-genotype": {
+    "index": 0,
+    "url": "http://example.org/ig/vscs/StructureDefinition/my-genotype",
+    "name": "MyGenotype",
+    "path": "StructureDefinition-my-genotype.html",
+    "kind": "resource",
+    "type": "Observation",
+    "base": "http://hl7.org/fhir/StructureDefinition/Observation",
+    "basename": "Observation",
+    "basepath": "http://hl7.org/fhir/R4/observation.html",
+    "status": "active",
+    "date": "Fri Apr 17 15:12:00 CDT 2020",
+    "publisher": "Bob Milius",
+    "description": "My Genotype profile of Observation"
+  }
+}

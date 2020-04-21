@@ -1,0 +1,26 @@
+{
+  "name": "vscs",
+  "version": "0.1.0",
+  "canonical": "http://example.org/ig/vscs",
+  "url": "http://example.org/ig/vscs",
+  "title": "My Implementation Guide",
+  "description": "Exploring how FSH can be used to create an IG, focusing on Code Systems and Value Sets",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.us.core": "3.1.0",
+    "hl7.fhir.uv.genomics-reporting": "1.0.0"
+  },
+  "keywords": [
+    "FSH",
+    "testing"
+  ],
+  "language": "en",
+  "author": "Bob Milius",
+  "maintainers": [
+    {
+      "name": "Bob Milius",
+      "email": "mailto:bmilius@nmdp.org"
+    }
+  ],
+  "license": "Apache-2.0"
+}

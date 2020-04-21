@@ -3,5 +3,5 @@
 .AppleDouble
 .LSOverride
 
-**/build/
+**/build/output
 **/org.hl7.fhir.publisher.jar

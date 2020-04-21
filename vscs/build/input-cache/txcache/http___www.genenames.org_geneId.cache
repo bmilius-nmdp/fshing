@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.genenames.org/geneId",
+  "code" : "HGNC:4931"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.genenames.org/geneId\" is not known (encountered paired with code = \"HGNC:4931\"); The code provided (http://www.genenames.org/geneId#HGNC:4931) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.genenames.org/geneId",
+  "code" : "HGNC:4931",
+  "display" : "HLA-A"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.genenames.org/geneId\" is not known (encountered paired with code = \"HGNC:4931\"); The code provided (http://www.genenames.org/geneId#HGNC:4931) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

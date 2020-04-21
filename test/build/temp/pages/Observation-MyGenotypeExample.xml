@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="MyGenotypeExample"/>
+  <meta>
+    <profile value="http://example.org/ig/vscs/StructureDefinition/my-genotype"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: MyGenotypeExample</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Genotype display name <span style="background: LightGoldenRodYellow">(Details : {LOINC code '84413-4' = 'Genotype display name)</span></p><p><b>value</b>: hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02 <span style="background: LightGoldenRodYellow">(Details : {http://glstring.org code 'hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02' = 'hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02)</span></p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style="background: LightGoldenRodYellow">(Details : {LOINC code '48018-6' = 'Gene studied [ID])</span></td><td>HLA-A <span style="background: LightGoldenRodYellow">(Details : {http://www.genenames.org/geneId code 'HGNC:4931' = 'HGNC:4931', given as 'HLA-A'})</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="84413-4"/>
+    </coding>
+  </code>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://glstring.org"/>
+      <code value="hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02"/>
+    </coding>
+  </valueCodeableConcept>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48018-6"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://www.genenames.org/geneId"/>
+        <code value="HGNC:4931"/>
+        <display value="HLA-A"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>
