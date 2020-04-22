@@ -17,7 +17,7 @@
    <name value="MyImplementationGuide"/>
    <title value="My Implementation Guide"/>
    <status value="active"/>
-   <date value="2020-04-21T14:57:32-05:00"/>
+   <date value="2020-04-21T19:29:20-05:00"/>
    <publisher value="Bob Milius"/>
    <contact>
       <name value="Bob Milius"/>
@@ -196,6 +196,14 @@
       <parameter>
          <code value="show-inherited-invariants"/>
          <value value="false"/>
+      </parameter>
+      <parameter>
+         <code value="special-url"/>
+         <value value="http://www.genenames.org/geneId"/>
+      </parameter>
+      <parameter>
+         <code value="special-url"/>
+         <value value="http://glstring.org"/>
       </parameter>
       <parameter>
          <code value="special-url"/>

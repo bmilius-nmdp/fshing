@@ -47,7 +47,6 @@ ValueSet:  HLAGeneIdVS
 Title: "HLA Gene Name Value Set"
 Id: hla-geneid-valueset
 Description:  "HLA HGNC GeneIds Valueset"
-* codes from system HGNCGeneIdCS
 * HLAGeneIdCS#HGNC:4931   "HLA-A"
 * HLAGeneIdCS#HGNC:4932   "HLA-B"
 * HLAGeneIdCS#HGNC:4933   "HLA-C"
@@ -97,7 +96,7 @@ CodeSystem: GLStringCS
 Title: "Genotype List String Code CodeSystem"
 Id: glstring-codesystem
 Description: "Genotype List String Codesystem used for HLA reporting"
-* ^url = "http://www.glstring.org"
+* ^url = "http://glstring.org"
 * ^compositional = true
 * ^version = "1.0"
 * ^status = #active
