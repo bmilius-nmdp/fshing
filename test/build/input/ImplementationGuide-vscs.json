@@ -103,22 +103,6 @@
       {
         "code": "show-inherited-invariants",
         "value": "false"
-      },
-      {
-        "code": "special-url",
-        "value": "http://www.genenames.org/geneId"
-      },
-      {
-        "code": "special-url",
-        "value": "http://glstring.org"
-      },
-      {
-        "code": "special-url",
-        "value": "http://www.genenames.org/geneId"
-      },
-      {
-        "code": "special-url",
-        "value": "http://glstring.org"
       }
     ]
   }

@@ -10,9 +10,6 @@
   "compose": {
     "include": [
       {
-        "system": "http://www.genenames.org/geneId"
-      },
-      {
         "system": "http://example.org/ig/vscs/CodeSystem/hla-genename-codesystem",
         "concept": [
           {

@@ -3,6 +3,7 @@
 .AppleDouble
 .LSOverride
 
-**/build/temp
+**/input-cache
+**/temp
 **/build/output
 **/org.hl7.fhir.publisher.jar
