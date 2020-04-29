@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "MyGenotypeExample",
+  "meta": {
+    "profile": [
+      "http://example.org/ig/vscs/StructureDefinition/my-genotype"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "84413-4",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "status": "final",
+  "derivedFrom": [
+    {
+      "reference": "ImagingStudy/MyImagingStudy"
+    }
+  ]
+}

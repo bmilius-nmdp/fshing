@@ -1,0 +1,11 @@
+{
+  "resourceType": "ImagingStudy",
+  "id": "MyImagingStudy",
+  "status": "unknown",
+  "subject": {
+    "identifier": {
+      "value": "123"
+    },
+    "type": "Patient"
+  }
+}
