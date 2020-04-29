@@ -1,0 +1,7 @@
+{
+  "resourceType": "MolecularSequence",
+  "id": "MySequenceExample",
+  "coordinateSystem": 0,
+  "type": "dna",
+  "observedSeq": "CAGGAGCAGAGGGG"
+}
