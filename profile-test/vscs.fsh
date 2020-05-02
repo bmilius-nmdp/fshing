@@ -6,18 +6,20 @@ Id:             my-genotype
 Title:          "My Genotype Observation"
 Description:    "My Genotype profile of Observation"
 * code = LNC#84413-4 // Genotype display name
-// * derivedFrom ^slicing.discriminator[0].type = #type
-// * derivedFrom ^slicing.discriminator[0].path = "reference"
-// * derivedFrom ^slicing.discriminator[1].type = #profile
-// * derivedFrom ^slicing.discriminator[1].path = "$this.resolve()"
-* derivedFrom ^slicing.discriminator[0].type = #pattern
-* derivedFrom ^slicing.discriminator[0].path = "resolve().code"
+* derivedFrom ^slicing.discriminator[0].type = #type
+* derivedFrom ^slicing.discriminator[0].path = "$this.resolve()"
+// * derivedFrom ^slicing.discriminator[0].type = #profile
+// * derivedFrom ^slicing.discriminator[0].path = "$this.resolve()"
+// * derivedFrom ^slicing.discriminator[0].type = #pattern
+// * derivedFrom ^slicing.discriminator[0].path = "resolve().code"
+// * derivedFrom ^slicing.discriminator[1].type = #pattern
+// * derivedFrom ^slicing.discriminator[1].path = "resolve().coordinateSystem"
 * derivedFrom ^slicing.rules = #open
 * derivedFrom 0..*
 * derivedFrom contains 
-      hapobs 0..* // and
-//     molseq 0..* 
-// * derivedFrom[molseq] only Reference(MolecularSequence)
+      hapobs 0..*  and
+      molseq 0..* 
+* derivedFrom[molseq] only Reference(MolecularSequence)
 * derivedFrom[hapobs] only Reference(my-haplotype)
 
 Profile:        MyHapObs
@@ -34,9 +36,9 @@ Usage: #example
 Title:      "Genotype Example"
 Description: "Example of genotyping"
 * status = #final
-// * derivedFrom[molseq] = Reference(MySequenceExample)
+* derivedFrom[molseq] = Reference(MySequenceExample)
 * derivedFrom[hapobs] = Reference(MyHaplotypeExample)
-* derivedFrom = Reference(MySequenceExample)
+// * derivedFrom = Reference(MySequenceExample)
 * derivedFrom = Reference(MyImagingStudy)
 
 Instance:   MyHaplotypeExample

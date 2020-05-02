@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "my-genotype",
-  "url": "http://example.org/ig/vscs/StructureDefinition/my-genotype",
+  "url": "http://fhir.b12x.org/ig/vscs/StructureDefinition/my-genotype",
   "version": "0.1.0",
   "name": "MyGenotype",
   "title": "My Genotype Observation",
@@ -182,7 +182,7 @@
         "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "http://example.org/ig/vscs/ValueSet/hla-geneid-valueset"
+          "valueSet": "http://fhir.b12x.org/ig/vscs/ValueSet/hla-geneid-valueset"
         }
       }
     ]

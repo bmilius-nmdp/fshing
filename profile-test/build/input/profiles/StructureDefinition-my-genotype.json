@@ -65,8 +65,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "pattern",
-              "path": "resolve().code"
+              "type": "type",
+              "path": "$this.resolve()"
             }
           ],
           "rules": "open"
@@ -81,6 +81,19 @@
             "code": "Reference",
             "targetProfile": [
               "http://example.org/ig/vscs/StructureDefinition/my-haplotype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.derivedFrom:molseq",
+        "path": "Observation.derivedFrom",
+        "sliceName": "molseq",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MolecularSequence"
             ]
           }
         ]

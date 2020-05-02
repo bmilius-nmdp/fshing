@@ -3,7 +3,7 @@
   "id": "MyGenotypeExample",
   "meta": {
     "profile": [
-      "http://example.org/ig/vscs/StructureDefinition/my-genotype"
+      "http://fhir.b12x.org/ig/vscs/StructureDefinition/my-genotype"
     ]
   },
   "code": {

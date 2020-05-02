@@ -18,6 +18,9 @@
   "derivedFrom": [
     {
       "reference": "ImagingStudy/MyImagingStudy"
+    },
+    {
+      "reference": "Observation/MyHaplotypeExample"
     }
   ]
 }

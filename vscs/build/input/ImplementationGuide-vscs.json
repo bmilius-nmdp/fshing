@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "vscs",
-  "url": "http://example.org/ig/vscs/ImplementationGuide/vscs",
+  "url": "http://fhir.b12x.org/ig/vscs/ImplementationGuide/vscs",
   "version": "0.1.0",
   "name": "MyImplementationGuide",
   "title": "My Implementation Guide",
@@ -29,11 +29,6 @@
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "packageId": "hl7.fhir.us.core",
       "version": "3.1.0"
-    },
-    {
-      "uri": "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
-      "packageId": "hl7.fhir.uv.genomics-reporting",
-      "version": "1.0.0"
     }
   ],
   "definition": {
@@ -76,7 +71,7 @@
         },
         "name": "HLA-A Genotype Example (HLA-A*01:01:01:01+HLA-A*01:02)",
         "description": "Example of HLA-A genotyping using IMGT/HLA 3.25 nomenclature",
-        "exampleCanonical": "http://example.org/ig/vscs/StructureDefinition/my-genotype"
+        "exampleCanonical": "http://fhir.b12x.org/ig/vscs/StructureDefinition/my-genotype"
       }
     ],
     "page": {
@@ -103,6 +98,14 @@
       {
         "code": "show-inherited-invariants",
         "value": "false"
+      },
+      {
+        "code": "special-url",
+        "value": "http://www.genenames.org/geneId"
+      },
+      {
+        "code": "special-url",
+        "value": "http://glstring.org"
       }
     ]
   }
