@@ -145,6 +145,7 @@
         ]
       },
       {
+<<<<<<< HEAD
         "id": "Observation.component:gene-studied.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "min": 1,
@@ -152,6 +153,19 @@
           "strength": "required",
           "valueSet": "http://fhir.b12x.org/ig/profile-test/ValueSet/hla-geneid-valueset"
         }
+=======
+        "id": "Observation.derivedFrom:molseq",
+        "path": "Observation.derivedFrom",
+        "sliceName": "molseq",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MolecularSequence"
+            ]
+          }
+        ]
+>>>>>>> b5ad547cc02cf824a9449be849221ba7f7a0664c
       }
     ]
   }

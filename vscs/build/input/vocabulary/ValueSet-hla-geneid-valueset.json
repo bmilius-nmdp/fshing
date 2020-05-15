@@ -6,11 +6,11 @@
   "title": "HLA Gene Name Value Set",
   "description": "HLA HGNC GeneIds Valueset",
   "version": "0.1.0",
-  "url": "http://example.org/ig/vscs/ValueSet/hla-geneid-valueset",
+  "url": "http://fhir.b12x.org/ig/vscs/ValueSet/hla-geneid-valueset",
   "compose": {
     "include": [
       {
-        "system": "http://example.org/ig/vscs/CodeSystem/hla-genename-codesystem",
+        "system": "http://www.genenames.org/geneId",
         "concept": [
           {
             "code": "HGNC:4931",
