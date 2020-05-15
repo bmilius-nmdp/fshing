@@ -17,7 +17,7 @@
    <name value="MyImplementationGuide"/>
    <title value="My Implementation Guide"/>
    <status value="active"/>
-   <date value="2020-04-23T18:20:00-05:00"/>
+   <date value="2020-05-15T11:31:08-05:00"/>
    <publisher value="Bob Milius"/>
    <contact>
       <name value="Bob Milius"/>
@@ -199,11 +199,11 @@
       </parameter>
       <parameter>
          <code value="special-url"/>
-         <value value="http://glstring.org"/>
+         <value value="http://www.genenames.org/geneId"/>
       </parameter>
       <parameter>
          <code value="special-url"/>
-         <value value="http://www.genenames.org/geneId"/>
+         <value value="http://glstring.org"/>
       </parameter>
       <parameter>
          <code value="path-resource"/>

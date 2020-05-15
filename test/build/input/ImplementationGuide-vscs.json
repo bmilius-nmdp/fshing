@@ -106,11 +106,11 @@
       },
       {
         "code": "special-url",
-        "value": "http://glstring.org"
+        "value": "http://www.genenames.org/geneId"
       },
       {
         "code": "special-url",
-        "value": "http://www.genenames.org/geneId"
+        "value": "http://glstring.org"
       }
     ]
   }

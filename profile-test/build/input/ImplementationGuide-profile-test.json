@@ -1,10 +1,10 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "vscs",
-  "url": "http://example.org/ig/vscs/ImplementationGuide/vscs",
+  "id": "profile-test",
+  "url": "http://fhir.b12x.org/ig/profile-test/ImplementationGuide/profile-test",
   "version": "0.1.0",
-  "name": "MyImplementationGuide",
-  "title": "My Implementation Guide",
+  "name": "ProfileTestImplementationGuide",
+  "title": "Profile Test Implementation Guide",
   "status": "active",
   "publisher": "Bob Milius",
   "contact": [
@@ -19,7 +19,7 @@
     }
   ],
   "description": "Exploring how FSH can be used to create an IG, focusing on Code Systems and Value Sets",
-  "packageId": "vscs",
+  "packageId": "profile-test",
   "license": "Apache-2.0",
   "fhirVersion": [
     "4.0.1"
@@ -29,11 +29,6 @@
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "packageId": "hl7.fhir.us.core",
       "version": "3.1.0"
-    },
-    {
-      "uri": "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
-      "packageId": "hl7.fhir.uv.genomics-reporting",
-      "version": "1.0.0"
     }
   ],
   "definition": {
@@ -76,7 +71,7 @@
         },
         "name": "Genotype Example",
         "description": "Example of genotyping",
-        "exampleCanonical": "http://example.org/ig/vscs/StructureDefinition/my-genotype"
+        "exampleCanonical": "http://fhir.b12x.org/ig/profile-test/StructureDefinition/my-genotype"
       },
       {
         "reference": {
@@ -84,23 +79,7 @@
         },
         "name": "Haplotype Example",
         "description": "Example Haplotype",
-        "exampleCanonical": "http://example.org/ig/vscs/StructureDefinition/my-haplotype"
-      },
-      {
-        "reference": {
-          "reference": "ImagingStudy/MyImagingStudy"
-        },
-        "name": "Imaging Study Example",
-        "description": "Example of Imaging Study",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "MolecularSequence/MySequenceExample"
-        },
-        "name": "MolecularSequence Example",
-        "description": "Example of MolecularSequence",
-        "exampleBoolean": true
+        "exampleCanonical": "http://fhir.b12x.org/ig/profile-test/StructureDefinition/my-haplotype"
       }
     ],
     "page": {
@@ -127,6 +106,10 @@
       {
         "code": "show-inherited-invariants",
         "value": "false"
+      },
+      {
+        "code": "special-url",
+        "value": "http://www.genenames.org/geneId"
       }
     ]
   }

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-   <id value="vscs"/>
+   <id value="profile-test"/>
    <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
-         <h2>MyImplementationGuide</h2>
+         <h2>ProfileTestImplementationGuide</h2>
          <p>The official URL for this implementation guide is: </p>
-         <pre>http://example.org/ig/vscs/ImplementationGuide/vscs</pre>
+         <pre>http://fhir.b12x.org/ig/profile-test/ImplementationGuide/profile-test</pre>
          <div>
             <p>Exploring how FSH can be used to create an IG, focusing on Code Systems and Value Sets</p>
          </div>
       </div>
    </text>
-   <url value="http://example.org/ig/vscs/ImplementationGuide/vscs"/>
+   <url value="http://fhir.b12x.org/ig/profile-test/ImplementationGuide/profile-test"/>
    <version value="0.1.0"/>
-   <name value="MyImplementationGuide"/>
-   <title value="My Implementation Guide"/>
+   <name value="ProfileTestImplementationGuide"/>
+   <title value="Profile Test Implementation Guide"/>
    <status value="active"/>
-   <date value="2020-04-29T17:31:42-05:00"/>
+   <date value="2020-05-15T16:41:45-05:00"/>
    <publisher value="Bob Milius"/>
    <contact>
       <name value="Bob Milius"/>
@@ -27,18 +27,13 @@
       </telecom>
    </contact>
    <description value="Exploring how FSH can be used to create an IG, focusing on Code Systems and Value Sets"/>
-   <packageId value="vscs"/>
+   <packageId value="profile-test"/>
    <license value="Apache-2.0"/>
    <fhirVersion value="4.0.1"/>
    <dependsOn>
       <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
       <packageId value="hl7.fhir.us.core"/>
       <version value="3.1.0"/>
-   </dependsOn>
-   <dependsOn>
-      <uri value="http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting"/>
-      <packageId value="hl7.fhir.uv.genomics-reporting"/>
-      <version value="1.0.0"/>
    </dependsOn>
    <definition>
 
@@ -53,8 +48,14 @@
       </grouping>
 
 
-
-
+      <grouping id="_term_valueset">
+         <name value="Terminology: Value Sets"/>
+         <description value="These define sets of codes used by systems conforming with this implementation guide"/>
+      </grouping>
+      <grouping id="_term_codesystem">
+         <name value="Terminology: Code Systems"/>
+         <description value="These define new code systems used by systems conforming with this implementation guide"/>
+      </grouping>
 
 
 
@@ -96,6 +97,36 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-hla-geneid-valueset.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/hla-geneid-valueset"/>
+         </reference>
+         <name value="HLA Gene Name Value Set"/>
+         <description value="HLA HGNC GeneIds Valueset"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-hla-genename-codesystem.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/hla-genename-codesystem"/>
+         </reference>
+         <name value="HLA HGNC GeneID CodeSystem"/>
+         <description value="CodeSystem of HLA gene group subset of HGNC GeneId Codesystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Observation"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -106,7 +137,7 @@
          </reference>
          <name value="Genotype Example"/>
          <description value="Example of genotyping"/>
-         <exampleCanonical value="http://example.org/ig/vscs/StructureDefinition/my-genotype"/>
+         <exampleCanonical value="http://fhir.b12x.org/ig/profile-test/StructureDefinition/my-genotype"/>
          <groupingId value="_ex_example"/>
       </resource>
       <resource>
@@ -121,37 +152,7 @@
          </reference>
          <name value="Haplotype Example"/>
          <description value="Example Haplotype"/>
-         <exampleCanonical value="http://example.org/ig/vscs/StructureDefinition/my-haplotype"/>
-         <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="ImagingStudy"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ImagingStudy-MyImagingStudy.html"/>
-         </extension>
-         <reference>
-            <reference value="ImagingStudy/MyImagingStudy"/>
-         </reference>
-         <name value="Imaging Study Example"/>
-         <description value="Example of Imaging Study"/>
-         <exampleBoolean value="true"/>
-         <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="MolecularSequence"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="MolecularSequence-MySequenceExample.html"/>
-         </extension>
-         <reference>
-            <reference value="MolecularSequence/MySequenceExample"/>
-         </reference>
-         <name value="MolecularSequence Example"/>
-         <description value="Example of MolecularSequence"/>
-         <exampleBoolean value="true"/>
+         <exampleCanonical value="http://fhir.b12x.org/ig/profile-test/StructureDefinition/my-haplotype"/>
          <groupingId value="_ex_example"/>
       </resource>
       <page>
@@ -178,6 +179,16 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ValueSet-hla-geneid-valueset.html"/>
+               <title value="HLA Gene Name Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-hla-genename-codesystem.html"/>
+               <title value="HLA HGNC GeneID CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Observation-MyGenotypeExample.html"/>
                <title value="Genotype Example"/>
                <generation value="generated"/>
@@ -185,16 +196,6 @@
             <page>
                <nameUrl value="Observation-MyHaplotypeExample.html"/>
                <title value="Haplotype Example"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="ImagingStudy-MyImagingStudy.html"/>
-               <title value="Imaging Study Example"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="MolecularSequence-MySequenceExample.html"/>
-               <title value="MolecularSequence Example"/>
                <generation value="generated"/>
             </page>
          </page>
@@ -210,6 +211,10 @@
       <parameter>
          <code value="show-inherited-invariants"/>
          <value value="false"/>
+      </parameter>
+      <parameter>
+         <code value="special-url"/>
+         <value value="http://www.genenames.org/geneId"/>
       </parameter>
       <parameter>
          <code value="path-resource"/>
@@ -289,7 +294,7 @@
       </parameter>
       <parameter>
          <code value="path-history"/>
-         <value value="http://example.org/ig/vscs/history.html"/>
+         <value value="http://fhir.b12x.org/ig/profile-test/history.html"/>
       </parameter>
       <parameter>
          <code value="template-html"/>

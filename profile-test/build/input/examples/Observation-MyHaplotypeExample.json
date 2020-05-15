@@ -3,7 +3,7 @@
   "id": "MyHaplotypeExample",
   "meta": {
     "profile": [
-      "http://example.org/ig/vscs/StructureDefinition/my-haplotype"
+      "http://fhir.b12x.org/ig/profile-test/StructureDefinition/my-haplotype"
     ]
   },
   "status": "final",
@@ -14,5 +14,26 @@
         "system": "http://loinc.org"
       }
     ]
-  }
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "48018-6",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "HGNC:4931",
+            "system": "http://www.genenames.org/geneId",
+            "display": "HLA-A"
+          }
+        ]
+      }
+    }
+  ]
 }
